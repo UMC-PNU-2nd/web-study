@@ -23,7 +23,7 @@
         - 절대 경로 : 컴퓨터의 루트(제일 상위 폴더)에서 css 파일까지의 위치를 말함
         - 파일명을 우클릭하면 Copy Path(절대 경로), Copy Relative path(상대 경로) 복사 가능
             
-            ![Untitled](rdme_images/Untitled.png)
+            <img src="rdme_images/Untitled.png" width="300"/>
             
 
 ## 2. 선택자
@@ -87,7 +87,7 @@
         }
         ```
         
-        ![Untitled](rdme_images/Untitled%201.png)
+        <img src="rdme_images/Untitled%201.png" width="100"/>
         
         ```html
         .orange {
@@ -99,7 +99,7 @@
         }
         ```
         
-        ![Untitled](rdme_images/Untitled%202.png)
+        <img src="rdme_images/Untitled%202.png" width="100"/>
         
 
 - id 선택자 : id 앞에 `#`을 붙여준다. class와 달리 **동일한 id를 여러 element에 줄 수 없**고, **한 element는 여러 id값을 가질 수 없**다.
@@ -169,7 +169,7 @@
     - inline : span, a, img, button
     - block : p, div, ul, li, h1-h6
     
-    ![Untitled](rdme_images/Untitled%203.png)
+    <img src="rdme_images/Untitled%203.png" width="300"/>
     
     - css를 이유로 태그를 골라쓰면 안됨! → css에서 이런 속성을 변경할 수 있다 ⇒ display
         - none : 요소를 보이지 않게 함
@@ -179,7 +179,7 @@
     
 - box model : content, padding, border, margin
     
-    ![Untitled](rdme_images/Untitled%204.png)
+    <img src="rdme_images/Untitled%204.png" width="300"/>
     
     - padding: border와 content 사이의 간격
     - border : 테두리, 보통 css에서 굵기, [종류](https://developer.mozilla.org/ko/docs/Web/CSS/border-style), 색상 순으로 작성함.
@@ -217,9 +217,9 @@
         
 - user agent stylesheet : 브라우저마다 존재하는 태그에 대한 기본 스타일링
     
-    ![Untitled](rdme_images/Untitled%205.png)
+    <img src="rdme_images/Untitled%205.png" width="300"/>
     
-    ![Untitled](rdme_images/Untitled%206.png)
+    <img src="rdme_images/Untitled%206.png" width="300"/>
     
     - 브라우저에서 제공하는 스타일링 모두 초기화하기
         - [reset css](https://meyerweb.com/eric/tools/css/reset/)
@@ -281,7 +281,7 @@
             
     - inline-block을 사용했을 때 생기는 여백은 태그와 태그 사이에 생기는 공백이라 없앨 수 없다. → flex를 이용하는 추세
         
-        ![Untitled](rdme_images/Untitled%207.png)
+        <img src="rdme_images/Untitled%207.png" width="300"/>
         
     
 
@@ -289,74 +289,74 @@
 
 - flexbox : layout을 짜는 방법 중 하나, **flex-container**와 **flex-item**으로 구성됨
     
-    ![Untitled](rdme_images/Untitled%208.png)
+    <img src="rdme_images/Untitled%208.png" width="300"/>
     
     - main axis : 메인이 되는 축 (수평일 수도 있고, 수직일 수도 있다.)
     - cross axis : main axis의 반대되는 축
 - flex-direction : row(가로), row-reverse, column(세로), column-reverse
     - `flex-direction: row;` (기본값)
         
-        ![Untitled](rdme_images/Untitled%209.png)
+        <img src="rdme_images/Untitled%209.png" width="400"/>
         
     - `flex-direction: row-reverse;`
         
-        ![Untitled](rdme_images/Untitled%2010.png)
+        <img src="rdme_images/Untitled%2010.png" width="400"/>
         
     - `flex-direction : column;`
         
-        ![Untitled](rdme_images/Untitled%2011.png)
+        <img src="rdme_images/Untitled%2011.png" width="70"/>
         
     - `flex-direction : column-reverse;`
         
-        ![Untitled](rdme_images/Untitled%2012.png)
+        <img src="rdme_images/Untitled%2012.png" width="70"/>
         
     
 - justify-content : main axis를 기준으로 정렬하는 속성
     - `justify-content: flex-start;` (기본값)
         
-        ![Untitled](rdme_images/Untitled%2013.png)
+        <img src="rdme_images/Untitled%2013.png" width="400"/>
         
     - `justify-content: flex-end;`
         
-        ![Untitled](rdme_images/Untitled%2014.png)
+        <img src="rdme_images/Untitled%2014.png" width="400"/>
         
     - `justify-content: center;`
         
-        ![Untitled](rdme_images/Untitled%2015.png)
+        <img src="rdme_images/Untitled%2015.png" width="400"/>
         
     - `justify-content: space-between;`
         
-        ![Untitled](rdme_images/Untitled%2016.png)
+        <img src="rdme_images/Untitled%2016.png" width="400"/>
         
     - `justify-content: space-evenly;`
         
-        ![Untitled](rdme_images/Untitled%2017.png)
+        <img src="rdme_images/Untitled%2017.png" width="400"/>
         
     - `justify-content: space-around;` : space-evenly와 달리 양 끝 item은 다른 item들 사이의 공백의 반만큼의 공백만 가짐
         
-        ![Untitled](rdme_images/Untitled%2018.png)
+        <img src="rdme_images/Untitled%2018.png" width="400"/>
         
 
 - align-items : cross axis를 기준으로 정렬하는 속성
     - `align-items : stretch;` (기본값)
         
-        ![Untitled](rdme_images/Untitled%2019.png)
+        <img src="rdme_images/Untitled%2019.png" width="400"/>
         
     - `align-items : flex-start;`
         
-        ![Untitled](rdme_images/Untitled%2020.png)
+        <img src="rdme_images/Untitled%2020.png" width="400"/>
         
     - `align-items : flex-end;`
         
-        ![Untitled](rdme_images/Untitled%2021.png)
+        <img src="rdme_images/Untitled%2021.png" width="400"/>
         
     - `align-items : center;`
         
-        ![Untitled](rdme_images/Untitled%2022.png)
+        <img src="rdme_images/Untitled%2022.png" width="400"/>
         
     - `align-items : base-line;` text의 base line을 기준으로 정렬
         
-        ![Untitled](rdme_images/Untitled%2023.png)
+        <img src="rdme_images/Untitled%2023.png" width="400"/>
         
 
 - flex-grow, flex-shrink *(자식 태그인 flex-item에 적용)*
@@ -371,7 +371,7 @@
         }
         ```
         
-        ![KakaoTalk_Photo_2022-03-25-19-09-16.gif](rdme_images/KakaoTalk_Photo_2022-03-25-19-09-16.gif)
+        <img src="rdme_images/KakaoTalk_Photo_2022-03-25-19-09-16.gif" width="400"/>
         
         - 기본값은 0
         - 4번째 5번째 div의 크기가 계산되는 방식
@@ -389,7 +389,7 @@
         } 
         ```
         
-        ![KakaoTalk_Photo_2022-03-25-19-16-51.gif](rdme_images/KakaoTalk_Photo_2022-03-25-19-16-51.gif)
+        <img src="rdme_images/KakaoTalk_Photo_2022-03-25-19-16-51.gif" width="400"/>
         
         - **기본값은 1** (flex-shrink 값을 정해주지 않았더라도 width가 줄어들면 모든 item이 축소된다.)
         - 4번째 5번째 div의 크기가 계산되는 방식
@@ -414,17 +414,17 @@
 - flex-wrap 속성 *(부모 태그인 flex-container에 적용)*
     - `flex-wrap : nowrap;` (기본값) : content 크기가 width에 맞게 축소되는 형태
         
-        ![Untitled](rdme_images/Untitled%2024.png)
+        <img src="rdme_images/Untitled%2024.png" width="300"/>
         
     - `flex-wrap : wrap;` : width가 줄어들었을 때, 넘친 content들이 다음줄로 넘어감
         
-        ![Untitled](rdme_images/Untitled%2025.png)
+        <img src="rdme_images/Untitled%2025.png" width="300"/>
         
         - align-content : flex-wrap 속성이 wrap일 때만 사용할 수 있는 속성 (여러줄인 content를 수직축 방향으로 정렬할 때 사용한다)
             - flex-start, flex-end, center, stretch, space-betwwen, space-around, space-evenly
     - `flex-wrap : wrap-reverse;` : wrap과 동일하지만 끝점에서 시작점으로 정렬됨
         
-        ![Untitled](rdme_images/Untitled%2026.png)
+        <img src="rdme_images/Untitled%2026.png" width="300"/>
         
 
 - flexbox 연습사이트 : [flexbox froggy](https://flexboxfroggy.com/#ko)
@@ -445,7 +445,7 @@
         }
         ```
         
-        ![Untitled](rdme_images/Untitled%2027.png)
+        <img src="rdme_images/Untitled%2027.png" width="80"/>
         
     - z-index 값으로 레이어의 위치를 정해줄 수도 있다.
         
@@ -456,7 +456,7 @@
         }
         ```
         
-        ![Untitled](rdme_images/Untitled%2028.png)
+        <img src="rdme_images/Untitled%2028.png" width="80"/>
         
         ```css
         .item:nth-child(2) {
@@ -472,7 +472,7 @@
         }
         ```
         
-        ![Untitled](rdme_images/Untitled%2029.png)
+        <img src="rdme_images/Untitled%2029.png" width="300"/>
         
         ```css
         .item:nth-child(2) {
@@ -490,7 +490,7 @@
         }
         ```
         
-        ![Untitled](rdme_images/Untitled%2030.png)
+        <img src="rdme_images/Untitled%2030.png" width="300"/>
         
 
 - `position: absolute;` : static이 아닌, 다른 position값을 가지고 있는 부모를 기준으로 함. (*상위 태그들 중 없을 시, root element인 body가 기준*) 마찬가지로 top, bottom, left, right로 위치조정 가능
@@ -503,7 +503,7 @@
     }
     ```
     
-    ![Untitled](rdme_images/Untitled%2031.png)
+    <img src="rdme_images/Untitled%2031.png" width="300"/>
     
     → 원래 문맥에서 나와서 다른 태그들보다 위에 위치하고 있다.
     
@@ -517,7 +517,7 @@
     }
     ```
     
-    ![Untitled](rdme_images/Untitled%2032.png)
+    <img src="rdme_images/Untitled%2032.png" width="300"/>
     
     → 부모요소에 `position:relative;`를 적용하면, 2번째 div가 해당요소를 기준으로 위치가 변한다. 
     
@@ -531,7 +531,7 @@
     }
     ```
     
-    ![KakaoTalk_Photo_2022-03-25-20-07-10.gif](rdme_images/KakaoTalk_Photo_2022-03-25-20-07-10.gif)
+    <img src="rdme_images/KakaoTalk_Photo_2022-03-25-20-07-10.gif" width="400"/>
     
 
 - `position: sticky;` : 스크롤을 했을때, 정해준 위치에 닿고 거기서 더 넘으면 그자리에 계속 보이도록 함 / top, bottom, left, right 값을 적어도 하나 가지고 있어야 함
@@ -543,7 +543,7 @@
     }
     ```
     
-    ![KakaoTalk_Photo_2022-03-25-20-09-24.gif](rdme_images/KakaoTalk_Photo_2022-03-25-20-09-24.gif)
+    <img src="rdme_images/KakaoTalk_Photo_2022-03-25-20-09-24.gif" width="400"/>
     
 
 ## 6. 실습
@@ -551,7 +551,7 @@
 - 웹사이트에 사용된 font 알아내기
     - 크롬 개발자도구에서 input의 placeholder 선택하기
     
-    ![Untitled](rdme_images/Untitled%2033.png)
+    <img src="rdme_images/Untitled%2033.png" width="300"/>
     
     - 크롬 확장프로그램 활용하기 (WhatFont)
         
@@ -567,7 +567,7 @@
         
         [Google Fonts](https://fonts.google.com/)
         
-        ![Untitled](rdme_images/Untitled%2034.png)
+        <img src="rdme_images/Untitled%2034.png" width="300"/>
         
         1. HTML 파일의 <title> 아래에 <link> 항목을 붙여넣기
             
