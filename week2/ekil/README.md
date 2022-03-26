@@ -346,3 +346,38 @@ flex: 2 2 10%;
 💡 `z-index`: 요소가 다른 요소를 덮어 쓰는 것이 싫을 때 사용.
 - 모든 요소의 `z-index` 기본값은 `0`.
 - `z-index` 값에 음수를 주면 모든 요소의 뒤에 위치하게 되고, 양수 값을 주면 다른 `z-index`를 고려해서 레이어가 바뀜. 값이 클수록 위에 위치함.
+
+
+***
+
+## 실습 체크리스트
+
+1. border
+- 테두리.
+- 테두리의 굵기, 종류, 색상을 작성해주면 만들 수 있다.
+- `border: 2px solid #fff`
+- `border-radius` 속성을 이용해 테두리를 둥글게 만들 수 있다.   
+`border-radius: 50%`는 요소를 동그랗게 만들어줌.
+
+2. padding
+- 안 여백. `content`와 `border` 사이의 여백이다.
+- `padding: 10px 20px 30px 40px`과 같이도 쓸 수 있으며, `top`, `right`, `bottom`, `left` 순이다.
+- `padding-top: 10px`과 같이 쓸 수도 있다.
+- `padding: 10px 20px`만 쓰면 `padding-top`과 `padding-bottom`에 `10px`을, `padding-left`와 `padding-right`에 `20px`을 준다.
+
+3. margin
+- border 밖의 여백. 즉, 요소 바깥의 여백이다.
+- padding과 margin은 인라인 요소에는 줄 수 없다.
+- padding과 같은 방법으로 사용하면 된다.
+
+4. grid와 flex의 차이점
+- flex는 `row`와 `column` 중 하나의 방향으로만 레이아웃을 나눌 수 있다.
+- grid는 `row`와 `column`으로 동시에 레이아웃을 나눌 수 있다. 이름대로 모눈을 생각하면 된다.
+- grid에는 flex에는 없는 `justify-items`, `place-items`, `place-content`라는 속성이 있다.
+- flex는 `wrap` 속성에 `no-wrap` 값을 주어 요소를 두 줄 이상으로 만들지 않는 방법이 있으나, grid는 요소가 그 줄에 못 들어오면 바로 다음 줄로 내려버린다.
+
+5. absolute, static, fixed, relative의 차이점
+- `static`은 기본값.
+- `relative`는 요소 자신의 본래 자리(`static`이었을 시 놓였을 자리)를 기준으로 상하좌우로 이동 가능.
+- `absolute`는 조상 요소 중 `static`이 아닌 요소를 기준으로 상하좌우로 이동 가능.
+- `fixed`는 viewport 기준으로 위치를 잡고, 그 위치에 고정됨.
