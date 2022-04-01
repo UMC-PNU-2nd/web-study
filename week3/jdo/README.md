@@ -169,6 +169,162 @@ obj.name = 'dwell';
 obj.greeting = 'hi'
 이렇게 생성 및 선언을 해도되지만 위에 한것처럼 한꺼번에 해도됌
 
+=====================================================
+
+함수
+function 변수명(매개변수) {
+    내용;
+    return 반환값;
+    
+}
 
 
+컨벤션
+function multiply10(num) {
+    const result = num * 10;
+    return result;
+}
 
+함수는 선언만 한다고 사용되는 것이 아님.
+선언 후 호출을 해줘야 사용하는 것이다.
+
+const data = multiply10(5);
+==> 함수 자체가 상수 값으로 볼 수 있어야한다.
+
+arrow function : 
+
+const multifly10 = (num) => {
+    const result = num * 10;
+    return result;
+}
+
+================================================
+
+조건문
+
+if문 - else-if문 - else문
+
+if(조건문) {
+    실행할 코드;
+}
+
+if( age > 19 ) {
+    console.log('술을 마실 수 있다.');
+}else {
+    console.log('미성년자');
+}
+
+// 삼항 연산자 : 조건 ? 참일 때 실행될 코드 : 거짓일 때 실행될 코드;
+
+const result age > 19 ? ('술을 마실 수 있다.') : ('미성년자');
+console.log(result);
+==> result 에 문자열 값이 담기게 된다.
+
+if ( age < 10) {
+    console.log('애기');
+}else if ( age >= 10 && age <20) {
+    console.log('10대');
+}
+}else if ( age >= 20 && age <30) {
+    console.log('20대');
+}
+}else if ( age >= 30 && age <40) {
+    console.log('30대');
+}
+}else if ( age >= 40 && age <50) {
+    console.log('40대');
+}
+}else if ( age >= 60 && age <70) {
+    console.log('60대');
+}
+}else  {
+    console.log('노인');
+}
+
+
+switch 문 
+
+break를 사용하지 않으면 빠져나오지 않고 아래까지 모두 실행이 됌
+
+switch(age) {
+    case 60:
+        console.log('60대');
+        break;
+    case 50:
+        console.log('50대');
+        break;
+    case 40:
+        console.log('40대');
+        break;
+    case 30:
+        console.log('30대');
+        break;
+    case 20:
+        console.log('20대');
+        break;
+    case 10:
+        console.log('10대');
+        break;
+    default :
+        console.log('애기');
+        break;
+}
+
+==========================
+반복문
+
+for문 
+for(초기값; 종료조건; 증감설정) {
+    실행할 코드;
+}
+
+1 ~ 10 까지 반복하기
+for(let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+종료조건을 설정하지 않으면 무한으로 돌아감 ( 무한루프 )
+
+반복문은 배열에 하나하나 접근할 때 사용이 많이 됌
+
+const numArr = [45, 32, 11, 98, 22];
+
+for(let i = 0; i< numArr.length; i++){
+    console.log(numArr[i]);
+    numArr[i] += 10;
+}
+
+i< numArr.length; ==> 배열의 크기가 바뀔수도 있기때문에 동적으로 
+바뀔 수 있도록 코딩을 해줘야 좋은 코드가 될 수 있다.
+
+
+while문
+while(조건) {
+    실행할 코드
+    증감
+}
+
+let i = 0;
+while(i<10) {
+    console.log(i);
+    i++;
+}
+
+while문 무한루프
+while(true) {
+    실행할 코드
+    if(탈출할 조건){
+        break;
+    }
+}
+
+반복문을 사용할 때 break 와 continue를 잘 사용해주면 좋다.
+
+do-while문
+
+do {
+    console(i);
+    i++
+}while (i< 11)
+
+do-while은 조건문을 확인하기 전에 무조건 한번은 실행된다.
