@@ -1,0 +1,77 @@
+/* 동글동글한 버튼들을 저렇게 정렬할 때는 grid를 이용하는 게 좋다. flex, position으로는 불가능할까? 불가능하진 않을 것 같다. 근데 방법을 모르겠다. */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(8, 69, 119, 0.742);
+    width: 300px;
+    display: grid;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.screen {
+    height: 80px;
+    text-align: center;
+    background-color: pink;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.pink {
+    background-color: pink;
+    border-radius: 6px;
+}
+
+.grey {
+    background-color: lightgrey;
+    border-radius: 6px;
+}
+
+.black {
+    background-color: rgb(39, 39, 39);
+    border-radius: 6px;
+    color: #fff;
+}
+
+#ac {
+    grid-column: 1 / 3;
+}
+
+#enter {
+    grid-column: 3 / 5;
+}
+
+#num0 {
+    grid-column: 1 / 3;
+}
