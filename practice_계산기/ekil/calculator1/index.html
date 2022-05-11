@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="flex">
+    <div class="body flex">
+        <div class="result flex"></div>
+        <div class="btns">
+            <div class="resultControl flex">
+                <button type="button" class="resultController ac" aria-label="All Clear">AC</button>
+                <button type="button" class="resultController enter">Enter</button>
+            </div>
+            <div class="keys flex">
+                <div class="nums">
+                    <!-- 순서대로 숫자를 쓴 뒤에 CSS 이용해서 원하는 순서로 바꿔주고 싶었는데 잘 안 된다. -->
+                    <button type="button" class="num">1</button>
+                    <button type="button" class="num">2</button>
+                    <button type="button" class="num">3</button>
+                    <button type="button" class="num">4</button>
+                    <button type="button" class="num">5</button>
+                    <button type="button" class="num">6</button>
+                    <button type="button" class="num">7</button>
+                    <button type="button" class="num">8</button>
+                    <button type="button" class="num">9</button>
+                    <button type="button" class="num">0</button>
+                    <button type="button" class="num">.</button>
+                </div>
+                <div class="operators flex">
+                    <button type="button" class="operator">+</button>
+                    <button type="button" class="operator">-</button>
+                    <button type="button" class="operator">*</button>
+                    <button type="button" class="operator">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
