@@ -4,25 +4,25 @@ const $contentBox = document.querySelector('#contentBox');
 
 const API_KEY = 'AIzaSyABgyuN29OLwEo6oOn2QcBSDxtcJg60ETg'; // google cloud platform에서 받은 api 키 저장
 
-// function fetchVideo() {
-//     fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&maxResults=100&regionCode=kr&key=${API_KEY}`)
-//     .then(response => response.json()) // 서버에서 받은 응답을 json 형태로 변환
-//     .then(result => console.log(result.items)) // result로 찍힌 정보 중 items에 해당하는 정보 배열이 동영상 파일들임
-//     .then(result => result.items.map(video => videoCardTemplate(video))) // 비디오 아이템 하나하나에 접근, 각 아이템(video)을 videoCardTemplate에 넣어줄 것
-//     .catch(error => console.log("error", error)) // 혹시 모를 오류 캐치 위해
-// }
-
-// 아까는 잘 됐는데 이유 모르겠으나 갑자기 데이터 로드가 안 돼서 async await 방식으로 다시 해봄
-const dataFetch = async() => {
-    const response = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&maxResults=100&regionCode=kr&key=${API_KEY}`);
-    const data = await response.json();
-    // console.log(data);
-    const result = data.items.map(video => videoCardTemplate(video))
+function fetchVideo() {
+    fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&maxResults=100&regionCode=kr&key=${API_KEY}`)
+    .then(response => response.json()) // 서버에서 받은 응답을 json 형태로 변환
+    // .then(result => console.log(result.items)) // result로 찍힌 정보 중 items에 해당하는 정보 배열이 동영상 파일들임 -> .then 있어서 이거 켜면 영상 안 받아와 짐!
+    .then(result => result.items.map(video => videoCardTemplate(video))) // 비디오 아이템 하나하나에 접근, 각 아이템(video)을 videoCardTemplate에 넣어줄 것
+    .catch(error => console.log("error", error)) // 혹시 모를 오류 캐치 위해
 }
 
-dataFetch();
+// 아까는 잘 됐는데 이유 모르겠으나 갑자기 데이터 로드가 안 돼서 async await 방식으로 다시 해봄
+// const dataFetch = async() => {
+//     const response = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&maxResults=100&regionCode=kr&key=${API_KEY}`);
+//     const data = await response.json();
+//     // console.log(data);
+//     const result = data.items.map(video => videoCardTemplate(video))
+// }
 
-// fetchVideo();
+// dataFetch();
+
+fetchVideo();
 
 // fetch로 받아온 비디오 아이템들 하나하나에, 하드코딩할 때 작성했던 아이템 형식을 적용해줄 것 -> 템플릿 생성(위에서 videoCardTemplate에 넣어준 각 video들을 가지고 템플릿에서 정의한 대로 html 코드를 생성해줄 것)
 function videoCardTemplate(data) {
